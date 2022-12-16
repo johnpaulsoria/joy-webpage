@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: disc;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .6s;
+}
+.btn{
+    background-color: #f9004d;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: black;
+    color: #f9004d;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color:white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: gray;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #c6c5c6;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: black;
+    top: 6px;
+    right: 6px;
+}
+.newslatter form input:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    padding-right: 15px;
+}
+.about text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width:100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: gray;
+    font-size: 50px;
+    text-transform:capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.about-text p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.photography{
+    background-color: black;
+}
+.photography .heading{
+    text-align: center;
+    font-size: 50px;
+}
+.photography .slideshow-container {
+    max-width: 500px;
+    border-radius: 4px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.photography .mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.photography .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.photography .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.photography .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.photography .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.photography .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.photography .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.photography .active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.photography .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.footer .heading{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}
+.footer .footer-basic {
+    padding:40px 0;
+    background-color: black;
+    color:#4b4c4d;
+}
+.footer .footer-basic .social{
+    color: white;
+}
+.footer .footer-basic .social :hover{
+    color: #f9004d;
+    transform: scale(1.2s);
+}
+
+.footer .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+}
+
+.footer .footer-basic li {
+    padding:0 10px;
+}
+.footer .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+.footer .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+.footer .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+.footer .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+.footer .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+.footer .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+}
